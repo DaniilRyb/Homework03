@@ -1,0 +1,6 @@
+image: Visual Studio Code
+
+build_script:
+- cmd: cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+- cmd: cmake --build _build
+- cmd: cmake --build _build --target install
