@@ -11,6 +11,6 @@ ENT_SOURCE_DIR}/../formatter_lib
 add_executable(hello_world ${CMAKE_CURRENT_SOURCE_DIR}/hello_world.cpp)
 target_link_libraries(hello_world formatter_ex)
 
-install(TARGET hello_world
+install(TARGETS hello_world
         RUNTIME DESTINATION bin
 )
